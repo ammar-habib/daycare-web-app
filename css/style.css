@@ -1,0 +1,179 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+a,button{
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -ms-transition:0.5s all;
+    -o-transition:0.5s all;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 12px;
+}
+a:focus,a:hover,a:active{
+    outline: 0;
+    box-shadow: 0;
+    text-decoration: none;
+}
+
+.green-btn{
+    background:#079247;
+    border-color:#079247; 
+    color:#fff;
+}
+.green-btn:hover,.green-btn:focus{
+    background:#079247;
+    border-color:#079247; 
+    color:#fff;
+    outline: none;
+}
+.red-btn{
+    background:#d6492f;
+    border-color:#d6492f; 
+    color:#fff;
+}
+.red-btn:hover, .red-btn:focus{
+ background:#d6492f;
+ border-color:#d6492f; 
+ color:#fff;
+ outline: none;
+}
+.blue-btn{
+    background:#3a589b;
+    border-color:#3a589b; 
+    color:#fff;
+}
+.blue-btn:hover, .blue-btn:focus{
+    background:#3a589b;
+    border-color:#3a589b; 
+    color:#fff;
+    outline: none;
+}
+.white-btn{
+    background:#e3f0d9;
+    border-color:#e3f0d9; 
+    color:#5f5f5f;
+}
+.white-btn:hover, .white-btn:focus{
+    background:#e3f0d9;
+    border-color:#e3f0d9; 
+    color:#5f5f5f;
+}
+.custom-btn-block {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 10px 12px;
+}
+.custom-fa{
+    font-size: 22px;
+    position: relative;
+    right: 20px;
+    top: 2px;
+}
+.both-side-line {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.both-side-line:before, .both-side-line:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: red;
+}
+.both-side-line:before {
+    margin-left: -50%;
+    text-align: right;
+}
+.common-page-bg {
+  position: relative;
+  width: 100%;
+ /* height: 100vh;*/
+  background: url('../img/page-bg.png') center center no-repeat;
+  background-size: cover;
+}
+.common-page-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#7eba66,#adbd56);
+    opacity: .6; 
+}
+.slash-page{
+ height: 100vh;
+}
+.slash-page .logo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+}
+.login-sigup-page .logo, .login-page .logo, .signup-page .logo, .reset-password-page .logo{
+ width: 160px;
+ margin: 80px auto;
+}
+.login-page .logo{
+    margin: 60px auto;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.form-control {
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px 12px;
+    color: #5f5f5f;
+}
+.back-arrow{
+ position: relative;
+ top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
