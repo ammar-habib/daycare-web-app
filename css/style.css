@@ -93,6 +93,17 @@ a:focus,a:hover,a:active{
  /* .sidenav {padding-top: 15px;}
  .sidenav a {font-size: 18px;}*/
 }
+.gay-btn{
+    background:#828282;
+    border-color:#828282; 
+    color:#fff;
+}
+.gay-btn:hover,.gay-btn:focus{
+    background:#828282;
+    border-color:#828282; 
+    color:#fff;
+    outline: none;
+}
 .green-btn{
     background:#079247;
     border-color:#079247; 
@@ -110,10 +121,10 @@ a:focus,a:hover,a:active{
     color:#fff;
 }
 .red-btn:hover, .red-btn:focus{
- background:#d6492f;
- border-color:#d6492f; 
- color:#fff;
- outline: none;
+   background:#d6492f;
+   border-color:#d6492f; 
+   color:#fff;
+   outline: none;
 }
 .blue-btn{
     background:#3a589b;
@@ -171,9 +182,10 @@ a:focus,a:hover,a:active{
 .common-page-bg {
   position: relative;
   width: 100%;
-  /* height: 100vh;*/
+  /*height: 100vh;*/
   background: url('../img/page-bg.png') center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .common-page-bg:before {
     content: '';
@@ -185,8 +197,8 @@ a:focus,a:hover,a:active{
     background-image: linear-gradient(to bottom right,#7eba66,#adbd56);
     opacity: .6; 
 }
-.slash-page{
- height: 100vh;
+.slash-page, .login-sigup-page{
+    height: 200vh;
 }
 .slash-page .logo{
     position: fixed;
@@ -196,8 +208,8 @@ a:focus,a:hover,a:active{
     width: 160px;
 }
 .login-sigup-page .logo, .login-page .logo, .signup-page .logo, .reset-password-page .logo{
- width: 160px;
- margin: 80px auto;
+   width: 160px;
+   margin: 80px auto;
 }
 .login-page .logo{
     margin: 60px auto;
@@ -213,12 +225,12 @@ a:focus,a:hover,a:active{
     color: #5f5f5f;
 }
 .back-arrow{
- position: relative;
- top: 20px;
+   position: relative;
+   top: 20px;
 }
 .header-row{
- padding-top:10px;
- padding-bottom:10px;  
+   padding-top:15px;
+   padding-bottom:15px;  
 }
 .custom-nav-tabs li {
     width: 50%;
@@ -230,12 +242,12 @@ a:focus,a:hover,a:active{
     border: 0px;
 }
 .custom-nav-tabs li a{
- color: #5f5f5f !important;
- border-radius: 0px;
- border-bottom: 4px solid transparent;
- border-top: 0px;
- border-left: 0px;
- border-right: 0px;
+   color: #5f5f5f !important;
+   border-radius: 0px;
+   border-bottom: 4px solid transparent;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
 }
 .custom-nav-tabs li a:hover{
     border-color: transparent;
@@ -251,28 +263,132 @@ a:focus,a:hover,a:active{
     font-weight: bold;
 
 }
+.bottom-navbar{
+    z-index: inherit;
+    padding: 20px 0px 20px;
+    position: relative;
+}
+.bottom-navbar img{
+    margin: 0 auto;
+}
 
+.custom-nav-tabs-content{
+   height: 50vh;
+   position:relative;
+}
+.custom-nav-tabs-content .empty-booting-msg{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    margin-left: -100px;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  background: url('../img/header-bg.png') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100px;
+  margin-bottom: 15px;
+}
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#7eba66,#adbd56);
+    opacity: .6; 
+}
+.hero .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: -30px;
+    font-size: 20px;
+} 
+.hero .title .glyphicon{
+  right: -10px;
+  top: 4px;
+}
+.hero .booking-step{
+   position: absolute;
+   bottom: 0;
+   background: #079247;
+   margin-bottom: 0px;
+   padding: 5px;
+   font-size: 12px;
+   font-weight: bold;
+   width: 100%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.responsive-calendar .controls {
+    text-align: center;
+    background: #e3f0d9;
+    color: #5f5f5f;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+}
+.responsive-calendar .controls .fa{
+    color:#079247;
+}
+.responsive-calendar .day.header{
+    border-bottom: 0px !important;
+}
+.responsive-calendar .day{
+    font-size: 15px;
+    font-weight: 300;
+}
+.responsive-calendar .day a{
+    font-size: 13px;
+}
+.responsive-calendar .day.active a {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #079247;
+    border-radius: 30px;
+}
+.responsive-calendar .day a:hover{
+    background-color: transparent;
+}
+.responsive-calendar .day.active a:hover {
+    background-color: transparent;
+}
+.responsive-calendar .day .badge {
+    top: 25px;
+    right: 0px;
+    background-color:#079247;
+}
+.booking-section .number-slot-title{
+  font-weight: 300;
+  font-size: 13px;
+}
+.booking-section .number-slot-title .fa{
+   background-color:#079247;
+   color: #fff;
+   font-size: 10px;
+   padding: 5px;
+   border-radius: 10px; 
+}
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
 
 
 

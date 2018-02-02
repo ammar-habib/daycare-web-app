@@ -30,20 +30,16 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="row header-row">
-				<div class="col-xs-5 col-sm-5">
-					<img src="img/icon_hamburgerMenu.svg" class="img-responsive" onclick="openNav()">
-				</div>
-				<div class="col-xs-6 col-sm-6">
-					<strong class="pull-left">Home</strong>
-				</div>
+			<div class="header-row text-center">
+				<a href="#">
+					<img src="img/icon_hamburgerMenu.svg" class="img-responsive pull-left" onclick="openNav()">
+				</a>
+				<strong class="text-uppercase">Home</strong>
 			</div>
 		</div>
 	</header>
 	<div id="mySidenav" class="sidenav">
 		<div class="sidenav-inner">
-			
-			
 			<div class="sidenav-header">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
 					<img src="img/icon_delete.svg" class="img-responsive">
@@ -67,18 +63,42 @@
 	<main>
 		<section class="home-page">
 			<ul class="nav nav-tabs custom-nav-tabs">
-				<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-				<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+				<li class="active"><a data-toggle="tab" href="#upcoming">upcoming</a></li>
+				<li><a data-toggle="tab" href="#history">history</a></li>
 			</ul>
 			<div class="container">
-				<div class="tab-content custom-nav-tabs">
-					<div id="home" class="tab-pane fade in active">
-						<h3>HOME</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="tab-content custom-nav-tabs-content">
+					<div id="upcoming" class="tab-pane fade in active">
+						<p class="text-center empty-booting-msg">You have no incoming booking</p>
 					</div>
-					<div id="menu1" class="tab-pane fade">
-						<h3>Menu 1</h3>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<div id="history" class="tab-pane fade">
+						<p class="text-center empty-booting-msg">You have no incoming booking</p>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</section>
+		<section class="btn-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<a href="booking-daycare-spot.html" class="btn btn-default btn-block custom-btn-block green-btn">Book daycare spot</a>
+						<a href="#" class="btn btn-default btn-block custom-btn-block gay-btn">Select all daycare spot</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bottom-navbar navbar-fixed-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 col-sm-4">
+						<img src="img/icon_navHome.svg" class="img-responsive">
+					</div>
+					<div class="col-xs-4 col-sm-4">
+						<img src="img/icon_navChildren.svg" class="img-responsive">
+					</div>
+					<div class="col-xs-4 col-sm-4">
+						<img src="img/icon_navSettings.svg" class="img-responsive">
 					</div>
 				</div>
 			</div>
