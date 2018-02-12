@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Meta -->
+<meta charset="utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="keywords" content="">
+
+<title>Daycare-app</title>
+
+<!--CSS -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/build.css">
+<link rel="stylesheet" type="text/css" href="css/responsive-calendar.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+<!-- Add custom CSS here -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<style type="text/css">
+
+</style>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-row text-center">
+				<a href="home.html">
+					<img src="img/icon_backarrow.svg" class="img-responsive pull-left">
+				</a>
+				<strong class="text-uppercase">submit order</strong>
+			</div>
+		</div>
+		<div class="hero text-center margin-zero">
+			<div class="hero-inner">
+				<strong class="title only-title"><span class="text-uppercase"> Abc </span> Daycare<i class="glyphicon glyphicon-info-sign"></i></strong>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="selected-spots">
+			<p class="text-center">Daycare Spots Selected</p>
+		</div>
+		<section class="selected-sptos-listing">
+			<div class="container">
+				<div class="row selected-sptos-list-row">
+					<div class="col-xs-9 col-sm-9 padding-zero">
+						<p>Thu, Nov 18/2017 - <span><a href="#" class="red-text-color">Remove</a></span></p>
+						<p><small>7:00AM - 9:00PM (Full Day)</small></p>
+					</div>
+					<div class="col-xs-3 col-sm-3 padding-zero vcenter">
+						<p class="text-center"><strong>$25</strong></p>
+					</div>
+				</div>
+				<div class="row selected-sptos-list-row">
+					<div class="col-xs-9 col-sm-9 padding-zero">
+						<p>Thu, Nov 18/2017 - <span><a href="#" class="red-text-color">Remove</a></span></p>
+						<p class="waitlisted"><small><i><img src="img/icon_waitlisted.svg" class="img-responsive"></i> Waitlisted</small></p>
+					</div>
+					<div class="col-xs-3 col-sm-3 padding-zero vcenter">
+						<p class="text-center"><strong>$25</strong></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="totel-spots-pay text-center" style="font-size: 15px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6"><p class="pull-left">Total Due</p></div>
+					<div class="col-sm-6"><p class="pull-right"><span>$100</span></p></div>
+				</div>
+			</div>
+			<!-- <p><strong>Total:</strong> <span>$100</span></p> -->
+		</div>
+		<div class="form-group paypal-btn-div">
+			<div class="container">
+				<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-paypal"></i>Pay with paypal</a>
+			</div>
+		</div>
+	</main>
+	<!-- Modal -->
+	
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/responsive-calendar.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+	<div class="modal fade success-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="img/icon_success.svg" class="img-responsive success-img">
+						<p class="text-center">Your booking was successfull!</p>
+					</div>
+					<div class="modal-footer">
+						<a href="my-booking.html" class="btn btn-default btn-block custom-btn-block green-btn" data-dismiss="modal">Awesome!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

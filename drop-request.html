@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+
+	<title>Daycare-app</title>
+
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/build.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-calendar.css">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+	<!-- Add custom CSS here -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	<header class="margin-bottom">
+		<div class="container">
+			<div class="header-row text-center">
+				<a href="home-2.html">
+					<!-- <i class="fa fa-arrow-left pull-left"></i> -->
+					 <img  src="img/icon_backarrow.svg" class="img-responsive back-arrow">
+				</a>
+				<strong class="text-uppercase">Drop requests</strong>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="home-page drop-request-page">
+			<div class="container"> 
+				<section class="selected-sptos-listing">
+					<div class="inner-wrap">
+						<div class="row selected-sptos-list-row">
+							<div class="col-xs-9 col-sm-9 padding-zero">
+								<p>Thu, Nov 18/2017</p>
+								<p><small>Requested by Matt James - 7m ago</small></p>
+							</div>
+							<div class="col-xs-3 col-sm-3 padding-zero">
+								<a href="#" class="red-text-color link-icon" data-toggle="modal" data-target="#drop-request-modal"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="row selected-sptos-list-row">
+							<div class="col-xs-9 col-sm-9 padding-zero">
+								<p>Thu, Nov 18/2017</p>
+								<p><small>Requested by Matt James - 7m ago</small></p>
+							</div>
+							<div class="col-xs-3 col-sm-3 padding-zero">
+								<a href="#" class="red-text-color link-icon" data-toggle="modal" data-target="#drop-request-modal"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		
+	</main>
+	<div class="modal fade common-modal" id="drop-request-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+				<div class="modal-content">
+					<div class="modal-header">
+						<p class="modal-title text-center">Drop Request</p>
+					</div>
+					<div class="modal-body">
+						<div class="content-div">
+							<p class=""><strong>Date</strong></p>
+							<p class="green-text-color">Nov 20/2017</p>
+						</div>
+						<div class="content-div">
+							<p class=""><strong>Request by</strong></p>
+							<p class="green-text-color">ammar habib</p>
+						</div>
+						<div class="content-div">
+							<p class=""><strong>Reason</strong></p>
+							<p class="green-text-color">Personal</p>
+						</div>
+						
+						
+					</div>
+					<div class="modal-footer">
+						<a href="my-booking.html" class="btn btn-default btn-block custom-btn-block green-btn">Approve request</a>
+						<a href="my-booking.html" class="btn btn-default btn-block custom-btn-block cancell-btn">Reject request</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/responsive-calendar.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

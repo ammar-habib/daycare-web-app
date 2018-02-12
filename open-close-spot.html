@@ -35,13 +35,12 @@
 				<a href="home.html">
 					<img src="img/icon_backarrow.svg" class="img-responsive pull-left">
 				</a>
-				<strong class="text-uppercase">Confirm your boookings</strong>
+				<strong class="text-uppercase">OPEN SPOTS</strong>
 			</div>
 		</div>
 		<div class="hero text-center">
 			<div class="hero-inner">
-				<strong class="title"><span class="text-uppercase"> Abc </span> Daycare<i class="glyphicon glyphicon-info-sign"></i></strong>
-				<p class="booking-step">Step1 Select booking day</p>
+				<strong class="title only-title"><span class="text-uppercase"> Abc </span> Daycare<i class="glyphicon glyphicon-info-sign"></i></strong>
 			</div>
 		</div>
 	</header>
@@ -69,6 +68,52 @@
 				</div>
 			</div>
 		</section>
+		<div class="selected-spots">
+			<p class="text-center">Daycare Spots Selected</p>
+		</div>
+		<section class="selected-sptos-listing">
+			<div class="container">
+				<div class="row selected-sptos-list-row">
+					<div class="col-xs-9 col-sm-9 padding-zero">
+						<p>Thu, Nov 18/2017 - <span><a href="#" class="red-text-color">Remove</a></span></p>
+						<p><small>7:00AM - 9:00PM (Full Day)</small></p>
+					</div>
+					<div class="col-xs-3 col-sm-3 padding-zero vcenter">
+						<p class="text-center green-text-color">2</p>
+					</div>
+				</div>
+				<div class="row selected-sptos-list-row">
+					<div class="col-xs-9 col-sm-9 padding-zero">
+						<p>Thu, Nov 18/2017 - <span><a href="#" class="red-text-color">Remove</a></span></p>
+						<p><small>7:00AM - 9:00PM (Full Day)</small></p>
+					</div>
+					<div class="col-xs-3 col-sm-3 padding-zero vcenter">
+						<p class="text-center">5</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="form-group">
+			<div class="container">
+				<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-toggle="modal" data-target="#update-spot-success-modal">Update Selected Spots</a>
+			</div>
+		</div>
+
+		<div class="modal fade success-modal" id="update-spot-success-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="vertical-alignment-helper">
+				<div class="modal-dialog vertical-align-center">
+					<div class="modal-content">
+						<div class="modal-body">
+							<img src="img/icon_success.svg" class="img-responsive success-img">
+							<p class="text-center">Your update have been saved!</p>
+						</div>
+						<div class="modal-footer">
+							<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-dismiss="modal">Awesome!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -76,7 +121,6 @@
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript">
 		
-
 	</script>
 </body>
 </html>

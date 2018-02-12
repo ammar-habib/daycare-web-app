@@ -34,7 +34,7 @@
 				<a href="#">
 					<img src="img/icon_hamburgerMenu.svg" class="img-responsive pull-left menu-icon" onclick="openNav()">
 				</a>
-				<strong class="text-uppercase">Home</strong>
+				<strong class="text-uppercase">Setting</strong>
 			</div>
 		</div>
 	</header>
@@ -61,44 +61,32 @@
 		</div>
 	</div>
 	<main>
-		<section class="home-page">
-			<ul class="nav nav-tabs custom-nav-tabs">
-				<li class="active"><a data-toggle="tab" href="#upcoming">upcoming</a></li>
-				<li><a data-toggle="tab" href="#history">history</a></li>
+		<section>
+			<ul class="list-group setting-list-group">
+				<li class="list-group-item"><a href="#">Change Email <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">Change Password <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">Date & Timezone <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">Payment Settings <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">Notifications Preferences <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">Terms of Service <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">Privacy Policy <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
+				<li class="list-group-item"><a href="#">FAQs <span class="fa fa-angle-right pull-right green-text-color"></span></a></li>
 			</ul>
-			<div class="container">
-				<div class="tab-content custom-nav-tabs-content">
-					<div id="upcoming" class="tab-pane fade in active">
-						<p class="text-center empty-booting-msg">You have no incoming booking</p>
-					</div>
-					<div id="history" class="tab-pane fade">
-						<p class="text-center empty-booting-msg">You have no incoming booking</p>
-					</div>
-				</div>
-				<hr>
-			</div>
 		</section>
-		<section class="btn-section">
+		<section class="bottom-navbar navbar-fixed-bottom setting-bottom-navbar" style="position: fixed;">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12">
-						<a href="booking-daycare-spot.html" class="btn btn-default btn-block custom-btn-block green-btn">Book daycare spot</a>
-						<a href="sell-daycare-spot.html" class="btn btn-default btn-block custom-btn-block gay-btn">Sell all daycare spot</a>
+					<div class="col-xs-3 col-sm-3">
+						<a href="#"><img src="img/icon_navHome.svg" class="img-responsive"></a>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="bottom-navbar navbar-fixed-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-4 col-sm-4">
-						<img src="img/icon_navHome.svg" class="img-responsive">
+					<div class="col-xs-3 col-sm-3">
+						<a href="spot-booking.html"><img src="img/icon_navSpots.svg" class="img-responsive"></a>
 					</div>
-					<div class="col-xs-4 col-sm-4">
-						<img src="img/icon_navChildren.svg" class="img-responsive">
+					<div class="col-xs-3 col-sm-3">
+						<a href="#"><img src="img/icon_navChildren.svg" class="img-responsive"></a>
 					</div>
-					<div class="col-xs-4 col-sm-4">
-						<img src="img/icon_navSettings.svg" class="img-responsive">
+					<div class="col-xs-3 col-sm-3">
+						<a href="#"><img src="img/icon_navSettings.svg" class="img-responsive"></a>
 					</div>
 				</div>
 			</div>
