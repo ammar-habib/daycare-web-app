@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-760.000000, -538.000000)">
+        <g id="Group-2" transform="translate(760.000000, 538.000000)" fill="#5F5F5F">
+            <text id="Home" font-family="Lato-Regular, Lato" font-size="7" font-weight="normal" letter-spacing="0.474827588">
+                <tspan x="4.22109482" y="36">Home</tspan>
+            </text>
+            <g id="nav_home" fill-rule="nonzero">
+                <g id="if_home_293682">
+                    <polygon id="Shape" points="14 0 28 13.8666667 24.5 13.8666667 24.5 26 17.5 26 17.5 17.3333333 10.5 17.3333333 10.5 26 3.5 26 3.5 13.8666667 0 13.8666667"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

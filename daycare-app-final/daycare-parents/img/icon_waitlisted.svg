@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_waitlisted</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-378.000000, -210.000000)">
+        <g id="icon_waitlisted" transform="translate(378.000000, 210.000000)" fill="#F08700" fill-rule="nonzero">
+            <path d="M6.5,0.121875 C2.9859375,0.121875 0.121875,2.9859375 0.121875,6.5 C0.121875,10.0140625 2.9859375,12.878125 6.5,12.878125 C10.0140625,12.878125 12.878125,10.0140625 12.878125,6.5 C12.878125,2.9859375 10.0140625,0.121875 6.5,0.121875 Z M6.5,11.740625 C3.615625,11.740625 1.259375,9.384375 1.259375,6.5 C1.259375,3.615625 3.615625,1.259375 6.5,1.259375 C9.384375,1.259375 11.740625,3.615625 11.740625,6.5 C11.740625,9.384375 9.384375,11.740625 6.5,11.740625 Z" id="Shape"></path>
+            <polygon id="Shape" points="6.9265625 2.7015625 5.5046875 2.7015625 5.5046875 7.4953125 9.4046875 7.4953125 9.4046875 6.0734375 6.9265625 6.0734375"></polygon>
+        </g>
+    </g>
+</svg>

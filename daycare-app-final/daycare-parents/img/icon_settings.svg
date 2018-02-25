@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_settings</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-270.000000, -759.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon_settings" transform="translate(271.000000, 760.000000)" stroke="#079247" stroke-width="2">
+            <path d="M20,10.998 L20,20 C20,21.099 19.101,21.998 18.002,21.998 L1.998,22 C0.899,22 0,21.101 0,20.002 L0.002,3.998 C0.002,2.899 0.901,2 2,2 L11.002,2" id="Shape"></path>
+            <path d="M5,17 L9.703,16.059 C9.897,16.02 10.075,15.925 10.215,15.785 L22,4 C21.758,1.899 20.101,0.242 18,0 L6.215,11.785 C6.075,11.925 5.98,12.103 5.941,12.297 L5,17 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

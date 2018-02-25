@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+
+	<title>Daycare-app</title>
+
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/build.css">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+	<!-- Add custom CSS here -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-row text-center">
+				<a href="#">
+					<img src="img/icon_hamburgerMenu.svg" class="img-responsive pull-left menu-icon" onclick="openNav()">
+				</a>
+				<strong class="text-uppercase">spots & bookings</strong>
+			</div>
+		</div>
+	</header>
+	<div id="mySidenav" class="sidenav">
+		<div class="sidenav-inner">
+			<div class="sidenav-header">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+					<img src="img/icon_delete.svg" class="img-responsive">
+				</a>
+				<img src="img/pic.png" class="img-responsive pic">
+				<strong class="text-center name">Mathew James</strong>
+			</div>
+			<div class="links-div">
+				<a href="home.html">Home</a>
+				<a href="spot-booking.html">Open & Close Spots</a>
+				<a href="drop-request.html">Drop Requests <span class="badge drop-request-badge">1</span></a>
+				<a href="my-daycare.html">My Daycare</a>
+				<a href="transaction.html">Transaction History</a>
+				<a href="setting.html">Settings</a>
+				<a href="#">Help & Suppor</a>
+			</div>
+		</div>
+		<div class="login-btn-div">
+			<a href="#" class="btn btn-default green-btn login-btn"><i class="glyphicon glyphicon-log-out"></i>Login out</a>
+		</div>
+	</div>
+	<main>
+		<section class="home-page">
+			<ul class="nav nav-tabs custom-nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#upcoming">upcoming</a></li>
+				<li><a data-toggle="tab" href="#history">history</a></li>
+			</ul>
+			<div class="container">
+				<div class="tab-content custom-nav-tabs-content" style="height: 50vh;">
+					<div id="upcoming" class="tab-pane fade in active">
+						<p class="text-center empty-booting-msg">You have zero upcoming bookings.</p>
+					</div>
+					<div id="history" class="tab-pane fade">
+						<p class="text-center empty-booting-msg">You have zero upcoming bookings.</p>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</section>
+		<section class="btn-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<a href="open-close-spot.html" class="btn btn-default btn-block custom-btn-block green-btn">Open / Close Spots</a>
+					</div>
+				</div>
+			</div>
+			<section class="bottom-navbar navbar-fixed-bottom" style="position: fixed;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-3 col-sm-3">
+							<a href="home.html"><img src="img/icon_home_black.svg" class="img-responsive"></a>
+						</div>
+						<div class="col-xs-3 col-sm-3">
+							<a href="spot-booking.html"><img src="img/icon_spotsbookings_green.svg" class="img-responsive"></a>
+						</div>
+						<div class="col-xs-3 col-sm-3">
+							<a href="my-daycare.html"><img src="img/icon_daycare_black.svg" class="img-responsive"></a>
+						</div>
+						<div class="col-xs-3 col-sm-3">
+							<a href="setting.html"><img src="img/icon_navSettings.svg" class="img-responsive"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>

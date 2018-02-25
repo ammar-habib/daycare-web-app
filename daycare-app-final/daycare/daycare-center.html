@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+
+	<title>Daycare-app</title>
+
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/build.css">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+	<!-- Add custom CSS here -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-row text-center">
+				<a href="my-daycare.html">
+					<img  src="img/icon_backarrow.svg" class="img-responsive back-arrow">
+				</a>
+				<strong class="text-uppercase">ABC Daycare Center</strong>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="home-page">
+			<ul class="nav nav-tabs custom-nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#info">Info</a></li>
+				<li><a data-toggle="tab" href="#classrooms">Classrooms</a></li>
+			</ul>
+			
+			<div class="tab-content daycare-center-tab-content">
+				
+				<div id="info" class="tab-pane fade in active">
+					<form class="padding-two-time">
+						<div class="form-group">
+							<label><small>Daycare Name</small></label>
+							<input type="text" name="name" class="form-control" placeholder="ABC Daycare Center">
+						</div>
+						<div class="form-group">
+							<label><small>Contact First Name</small></label>
+							<input type="text" name="name" class="form-control" placeholder="Sholom">
+						</div>
+						<div class="form-group">
+							<label><small>Contact Last Name</small></label>
+							<input type="text" name="name" class="form-control" placeholder="Strick">
+						</div>
+						<div class="form-group" style="margin-bottom: 50px;">
+							<label><small>Description</small></label>
+							<textarea class="form-control" placeholder="Write a Short Description About your Daycare"></textarea>
+						</div>
+						<div class="form-group">
+							<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-toggle="modal" data-target="#save-changes-success-modal">Save Changes</a>
+						</div>
+					</form>
+				</div>
+				<div id="classrooms" class="tab-pane fade">
+					<div class="container"> 
+						<section class="selected-sptos-listing">
+							<div class="inner-wrap">
+								<div class="row selected-sptos-list-row">
+									<div class="col-xs-9 col-sm-9 padding-zero">
+										<p>Junior Classroom</p>
+									</div>
+									<div class="col-xs-3 col-sm-3 padding-zero">
+										<a href="#" class="red-text-color link-icon" data-toggle="modal" data-target="#cancel-classroom-modal"><img src="img/icon_delete.svg" class="img-responsive"></a>
+									</div>
+								</div>
+								<div class="row selected-sptos-list-row">
+									<div class="col-xs-9 col-sm-9 padding-zero">
+										<p>First Classroom</p>
+									</div>
+									<div class="col-xs-3 col-sm-3 padding-zero">
+										<a href="#" class="red-text-color link-icon" data-toggle="modal" data-target="#cancel-classroom-modal"><img src="img/icon_delete.svg" class="img-responsive"></a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="form-group">
+							<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-toggle="modal" data-target="#add-classroom-modal">Add a New Classroom</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="modal fade success-modal" id="save-changes-success-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="img/icon_success.svg" class="img-responsive success-img">
+						<p class="text-center">Your change have been saved!</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-dismiss="modal">Awesome!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade common-modal" id="add-classroom-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<button type="button" class="close" data-dismiss="modal"><i><img src="img/closebutton.svg" class="img-responsive close-arrow"></i></button>
+				<div class="modal-content padding-top-bottom">
+					<div class="modal-header">
+						<p class="modal-title text-center" style="margin-bottom: 15px;">Add a New Classroom</p>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<input type="text" name="class-room" class="form-control modal-forn-control" placeholder="First Classroom">
+						</div>
+						<a href="#" class="btn btn-default btn-block custom-btn-block green-btn">Add Classroom</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade common-modal" id="cancel-classroom-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog vertical-align-center">
+				<div class="modal-content">
+					<div class="modal-header">
+						<p class="modal-title text-center">Are you sure?</p>
+					</div>
+					<div class="modal-body text-center">
+						<div class="form-group">
+							<p style="margin-bottom:30px;">Are you sure you want to<br>
+							remove this classroom?</p>
+						</div>
+						<a href="#" class="btn btn-default btn-block custom-btn-block green-btn">Yes, Remove</a>
+						<a href="#" class="btn btn-default btn-block custom-btn-block cancell-btn" data-dismiss="modal">Navermind, Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
