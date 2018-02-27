@@ -16,12 +16,13 @@
 	<title>Daycare-app</title>
 
 	<!--CSS -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/build.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"> -->
 
 	<!-- Add custom CSS here -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -80,6 +81,7 @@
 									</div>
 									<div class="col-xs-3 col-sm-3 padding-zero">
 										<a href="#" class="red-text-color link-icon" data-toggle="modal" data-target="#cancel-classroom-modal"><img src="img/icon_delete.svg" class="img-responsive"></a>
+										<a href="#" class="red-text-color link-icon"><i class="fa fa-edit classroom-edit"></i></a>
 									</div>
 								</div>
 								<div class="row selected-sptos-list-row">
@@ -88,6 +90,7 @@
 									</div>
 									<div class="col-xs-3 col-sm-3 padding-zero">
 										<a href="#" class="red-text-color link-icon" data-toggle="modal" data-target="#cancel-classroom-modal"><img src="img/icon_delete.svg" class="img-responsive"></a>
+										<a href="#" class="red-text-color link-icon"><i class="fa fa-edit classroom-edit"></i></a>
 									</div>
 								</div>
 							</div>
@@ -117,18 +120,122 @@
 		</div>
 	</div>
 	<div class="modal fade common-modal" id="add-classroom-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<button type="button" class="close" data-dismiss="modal"><i><img src="img/closebutton.svg" class="img-responsive close-arrow"></i></button>
+			<div class="modal-content" style="width: 100%; margin-top: 50px;">
+				<div class="modal-header">
+					<p class="modal-title text-center">Add a New Classroom</p>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Classroom Name</label>
+						<input type="text" name="class-room" class="form-control modal-forn-control" placeholder="Classroom name">
+					</div>
+
+					<div class="form-group">
+						<label>Age(Specify the age range)</label>
+						<div class="age-range-input">
+							<input type="text" name="class-room" class="form-control modal-forn-control" style="margin-left:0px;">
+							<span>to</span>
+							<input type="text" name="class-room" class="form-control modal-forn-control">
+							<select class="form-control modal-forn-control">
+								<option>Months old</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Capacity</label>
+						<input type="text" name="class-room" class="form-control modal-forn-control" placeholder="Classroom Capacity">
+					</div>
+					<div class="classroom-setting-section">
+						<strong>Set hour for your classroom</strong>
+						<div class="form-group">
+							<label>Defult hours</label>
+							<div id="time-range">
+								<p><span class="slider-time">9:00 AM</span><span class="slider-time2">5:00 PM</span>
+								</p>
+								<div class="sliders_step1">
+									<div id="slider-range"></div>
+								</div>
+							</div>
+							<button class="btn btn-default btn-block custom-btn-block green-btn">Set above hours for all days</button>
+						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<input type="checkbox" value="" id="monday">
+								<label for="monday">Monday</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="tuesday">
+								<label for="tuesday">Tuesday</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="wednesday">
+								<label for="wednesday">Wednesday</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="thursday">
+								<label for="thursday">Thursday</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="friday">
+								<label for="friday">Friday</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="saturday">
+								<label for="saturday">Saturday</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="sunday">
+								<label for="sunday">Sunday</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<p><strong>Cutoff Settings</strong></p>
+						<p><small style="margin-bottom: 20px;">When in the latest  time a customer can book?</small></p>
+						<div class="cutoff-setting-check">
+							<div class="checkbox">
+								<input type="checkbox" value="" id="day-prior">
+								<label for="Day Prior">Day Prior</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" value="" id="day-of">
+								<label for="day-of">Day of</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Cutoff time</label>
+						<select class="form-control modal-forn-control">
+							<option>6:00PM</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Fee for full day</label>
+						<input type="text" name="class-room" class="form-control modal-forn-control" placeholder="$0.00">
+					</div>
+					<div class="form-group">
+						<label>Credit offered to parent <a href="#" class="green-text-color">(Learn More)</a></label>
+						<input type="text" name="class-room" class="form-control modal-forn-control" placeholder="$0.00">
+					</div>
+					<div class="form-group">
+						<a href="#" class="btn btn-default btn-block custom-btn-block green-btn" data-toggle="modal" data-target="#classroom-add-success-modal">Add Classroom</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade success-modal" id="classroom-add-success-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="vertical-alignment-helper">
 			<div class="modal-dialog vertical-align-center">
-				<button type="button" class="close" data-dismiss="modal"><i><img src="img/closebutton.svg" class="img-responsive close-arrow"></i></button>
-				<div class="modal-content padding-top-bottom">
-					<div class="modal-header">
-						<p class="modal-title text-center" style="margin-bottom: 15px;">Add a New Classroom</p>
-					</div>
+				<div class="modal-content">
 					<div class="modal-body">
-						<div class="form-group">
-							<input type="text" name="class-room" class="form-control modal-forn-control" placeholder="First Classroom">
-						</div>
-						<a href="#" class="btn btn-default btn-block custom-btn-block green-btn">Add Classroom</a>
+						<img src="img/icon_success.svg" class="img-responsive success-img">
+						<p class="text-center">Your classroom have been added!</p>
+					</div>
+					<div class="modal-footer">
+						<a href="daycare-center.html" class="btn btn-default btn-block custom-btn-block green-btn">Awesome!</a>
 					</div>
 				</div>
 			</div>
@@ -156,6 +263,65 @@
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+		$("#slider-range").slider({
+			range: true,
+			min: 0,
+			max: 1440,
+			step: 15,
+			values: [540, 1020],
+			slide: function (e, ui) {
+				var hours1 = Math.floor(ui.values[0] / 60);
+				var minutes1 = ui.values[0] - (hours1 * 60);
+
+				if (hours1.length == 1) hours1 = '0' + hours1;
+				if (minutes1.length == 1) minutes1 = '0' + minutes1;
+				if (minutes1 == 0) minutes1 = '00';
+				if (hours1 >= 12) {
+					if (hours1 == 12) {
+						hours1 = hours1;
+						minutes1 = minutes1 + " PM";
+					} else {
+						hours1 = hours1 - 12;
+						minutes1 = minutes1 + " PM";
+					}
+				} else {
+					hours1 = hours1;
+					minutes1 = minutes1 + " AM";
+				}
+				if (hours1 == 0) {
+					hours1 = 12;
+					minutes1 = minutes1;
+				}
+				$('.slider-time').html(hours1 + ':' + minutes1);
+
+				var hours2 = Math.floor(ui.values[1] / 60);
+				var minutes2 = ui.values[1] - (hours2 * 60);
+
+				if (hours2.length == 1) hours2 = '0' + hours2;
+				if (minutes2.length == 1) minutes2 = '0' + minutes2;
+				if (minutes2 == 0) minutes2 = '00';
+				if (hours2 >= 12) {
+					if (hours2 == 12) {
+						hours2 = hours2;
+						minutes2 = minutes2 + " PM";
+					} else if (hours2 == 24) {
+						hours2 = 11;
+						minutes2 = "59 PM";
+					} else {
+						hours2 = hours2 - 12;
+						minutes2 = minutes2 + " PM";
+					}
+				} else {
+					hours2 = hours2;
+					minutes2 = minutes2 + " AM";
+				}
+
+				$('.slider-time2').html(hours2 + ':' + minutes2);
+			}
+		});
+	</script>
 </body>
 </html>
